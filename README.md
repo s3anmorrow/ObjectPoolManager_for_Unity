@@ -1,5 +1,7 @@
 # ObjectPoolManager_for_Unity
 A simple object pool manager that essentially replaces the need to Instantiate() and Destroy() gameObjects throughout your game.
+These are inefficient if done often. Also eliminates the need to have prefabs dragged onto components all over the place.
+A one stop spot for all prefabs to be dragged onto and managed.
 
 
 ## USAGE:
