@@ -26,6 +26,7 @@ Returns Component - returns the scriptName component for access to any of your o
 
 
 Returning gameObjects back to pool:
+
 	ObjectPool.instance.dispose(GameObject obj);
 Returns the gameObject back to the pool and removes it from the game
 
