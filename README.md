@@ -11,7 +11,7 @@ A one stop spot for all prefabs to be dragged onto and managed.
 * Each prefab will have a collection of game objects instantiated and stored in their own pool.
 * Game objects in pools will persist across scene changes. Nothing is destroyed so extra care will need to be taken to make sure gameObjects reset.
 * ObjectPool follows the singleton design pattern so only one will ever exist.
-
+* Note that all Invokes will not automatically be cancelled when a GameObject is put back in the pool. Add an OnDisable() event to each game object's script to cancel invokes OR use coroutines instead of invoke.
 
 Access to gameObjects in pool:
 
