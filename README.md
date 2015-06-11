@@ -13,7 +13,7 @@ A one stop spot for all prefabs to be dragged onto and managed.
 * ObjectPool follows the singleton design pattern so only one will ever exist.
 * Note that all Invokes will not automatically be cancelled when a GameObject is put back in the pool. Add an OnDisable() event to each game object's script to cancel invokes OR use coroutines instead of invoke.
 
-Access to gameObjects in pool:
+### Access to gameObjects in pool:
 
 	ObjectPool.instance.get(string prefabName);
 Returns GameObject and adds it to the game - just like Instantiate(prefab)
@@ -25,7 +25,7 @@ Returns GameObject with transformations and adds it to the game - just like Inst
 Returns Component - returns the scriptName component for access to any of your own methods/properties
 
 
-Returning gameObjects back to pool:
+### Returning gameObjects back to pool:
 
 	ObjectPool.instance.dispose(GameObject obj);
 Returns the gameObject back to the pool and removes it from the game
