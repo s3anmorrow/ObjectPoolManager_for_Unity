@@ -22,7 +22,7 @@ public class ObjectPool : MonoBehaviour {
 
     // --------------------------------------------------------------------- event handlers
 	// Use this for initialization
-	void Awake () {
+	private void Awake () {
         if (instance == null) {
             instance = this;
             // sets this to not be destroyed when reloading scene
